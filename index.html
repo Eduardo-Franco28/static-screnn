@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay>
+            <source src="animation.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="text-container">
+        <div>
+            <h1>Never Give Up</h1>
+            <h3>It's time to change</h3>
+            <a href="https://www.youtube.com/watch?v=2MZ_0wa4qg0">Change Your Mindset</a>
+        </div>
+    </div>
+</body>
+<script>
+    gsap.from(".text-container", {
+        duration: 1.5,
+        opacity: 0,
+        x: -100,
+    })
+</script>
+</html>
